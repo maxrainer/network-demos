@@ -1,0 +1,4 @@
+# galaxy
+
+- name: maxrainer.f5_loadbalancer
+- name: maxrainer.centos_app_server

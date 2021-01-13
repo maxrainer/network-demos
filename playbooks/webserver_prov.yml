@@ -1,0 +1,7 @@
+---
+
+- name: provision webserver on AWS 
+  hosts: function_webserver
+  roles:
+    - demo-centos-server 
+  
