@@ -7,4 +7,6 @@
   vars_files: 
     - ../vaults/f5_vault.yml
   connection: local
-  gather_facts: no 
+  gather_facts: no
+  collections:
+    - f5networks.f5_modules

@@ -1,7 +1,7 @@
 ---
 
-- name: provision webserver on AWS 
+- name: provision webserver 
   hosts: function_webserver
   roles:
-    - demo-centos-server 
+    - maxrainer.centos_app_server
   
