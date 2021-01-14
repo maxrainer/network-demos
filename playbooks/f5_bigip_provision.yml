@@ -5,6 +5,6 @@
   roles:
     - maxrainer.f5_loadbalancer
   vars_files: 
-    - ../vault/f5_vault.yml
+    - ../vaults/f5_vault.yml
   connection: local
   gather_facts: no 
