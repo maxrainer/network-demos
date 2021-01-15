@@ -1,0 +1,30 @@
+---
+# creates and updates templates on tower for F5 maintenance 
+
+- name: create dynamic templates for all F5 pools
+  hosts: tower 
+  gather_facts: false
+  connection: local
+  vars:
+    f5_device_name: 'f5-bigip-1'
+  tasks:
+      
+  - name: customize job templates
+    awx.awx.tower_job_template:
+      tower_host: "https://{{ ansible_host }}"
+      tower_username: admin
+      tower_password: "{{ ansible_ssh_pass }}"
+      validate_certs: no
+      name: "F5 BIGIP DYNAMIC - {{ item }} poolmember state"
+      inventory: "eve-ng lab"
+      job_type: run
+      project: Network Demos
+      playbook: "playbooks/f5_bigip_provision.yml"
+      credentials: 
+        - vault
+      job_tags: poolmember
+      survey_spec: "{{ lookup('template', '../templates/f5_poolmember_state_survey.json.j2') }}"
+      survey_enabled: yes
+      extra_vars: "{{ lookup('template', '../templates/f5_poolmember_state_extravar.json.j2') }}"
+    loop: "{{ hostvars[f5_device_name].f5_pools }}"
+    register: tower_result

@@ -1,5 +1,6 @@
 # galaxy
 collections: 
   - name: f5networks.f5_modules
+  - name: awx.awx
 
 
