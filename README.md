@@ -13,9 +13,8 @@ This Ansible Playbook hosts different kind of networking demos.
 * maxrainer.f5_loadbalancer
 * maxrainer.centos_app_server
 
-## **Documentations**
-* F5 BigIP demo:
-[F5](./docs/F5.md)
+## **Demo Documentations**
+* F5 BigIP : [F5](./docs/F5.md)
 
 ## **links to relevant roles and collections**
 #### **roles**
