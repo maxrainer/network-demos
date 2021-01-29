@@ -1,0 +1,8 @@
+---
+
+- name: network device data parsing and reporting
+  hosts: all
+  gather_facts: false
+  connection: local
+  roles: 
+    - maxrainer.network_reporting
