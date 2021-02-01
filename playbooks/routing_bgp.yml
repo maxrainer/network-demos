@@ -1,0 +1,8 @@
+---
+
+- name: BGP router configuration
+  hosts: all
+  gather_facts: false
+  connection: local
+  roles: 
+    - maxrainer.routing_bgp
