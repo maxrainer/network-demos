@@ -22,6 +22,12 @@ https://github.com/maxrainer/network-demos-inventory/tree/nxos
   - show bgp template on IDE
   - change inventory on tower
     - add a vrf to config 
+```
+    - neighbors:
+        - neighbor_address: 10.10.10.10
+          remote_as: '11111'
+      vrf: vrf3
+```
 - resource module configuration
   - run with same inventory ==> no changes done
   - explain state "replaced" - "merged" 
