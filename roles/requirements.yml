@@ -4,3 +4,4 @@
 - name: maxrainer.centos_app_server
 - name: maxrainer.network_reporting
 - name: maxrainer.routing_bgp
+- name: maxrainer.network_aci

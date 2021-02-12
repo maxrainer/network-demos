@@ -1,0 +1,10 @@
+---
+
+- name: Cisco APIC controller configuration and queries
+  hosts: apic
+  vars_files: 
+    - ../vaults/tower_vault.yml
+  connection: local
+  gather_facts: no
+  roles:
+    - maxrainer.network_aci
