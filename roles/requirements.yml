@@ -5,3 +5,4 @@
 - name: maxrainer.network_reporting
 - name: maxrainer.routing_bgp
 - name: maxrainer.network_aci
+- name: maxrainer.network_basics
