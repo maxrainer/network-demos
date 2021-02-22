@@ -1,0 +1,8 @@
+---
+
+- name: firewall generic playbook
+  gather_facts: false
+  hosts: all
+  roles:
+    - maxrainer.firewall_generic
+    
