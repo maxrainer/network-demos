@@ -1,3 +1,4 @@
 # galaxy
 collections: 
   - name: awx.awx
+  - name: cisco.ios
