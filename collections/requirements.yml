@@ -2,4 +2,4 @@
 collections: 
   - name: awx.awx
   - name: cisco.ios
-  - name: f5networks.modules
+  - name: f5networks.f5_modules
