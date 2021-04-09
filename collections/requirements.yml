@@ -2,6 +2,7 @@
 collections: 
   - name: awx.awx
   - name: cisco.ios
-    version: 2.0.0
   - name: f5networks.f5_modules
-    version: 1.7.1
+  - name: arista.eos
+  - name: cisco.nxos
+  - name: netbox.netbox
