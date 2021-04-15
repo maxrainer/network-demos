@@ -1,0 +1,8 @@
+---
+
+- name: network device update
+  hosts: all
+  gather_facts: false
+  connection: local
+  roles: 
+    - maxrainer.network_update

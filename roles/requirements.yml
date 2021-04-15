@@ -7,3 +7,4 @@
 - name: maxrainer.network_aci
 - name: maxrainer.network_basics
 - name: maxrainer.firewall_generic
+- name: maxrainer.network_update
