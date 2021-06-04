@@ -6,3 +6,4 @@ collections:
   - name: arista.eos
   - name: cisco.nxos
   - name: netbox.netbox
+    version: 2.1.0
