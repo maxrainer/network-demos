@@ -7,3 +7,5 @@ collections:
   - name: cisco.nxos
   - name: netbox.netbox
     version: 3.0.0
+  - name: paloaltonetworks.panos
+  - name: junipernetworks.junos
