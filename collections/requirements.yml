@@ -1,11 +1,11 @@
 # galaxy
-collections: 
-  - name: awx.awx
-  - name: cisco.ios
-  - name: f5networks.f5_modules
-  - name: arista.eos
-  - name: cisco.nxos
-  - name: netbox.netbox
-    version: 3.0.0
-  - name: paloaltonetworks.panos
-  - name: junipernetworks.junos
+# collections: 
+#   - name: awx.awx
+#   - name: cisco.ios
+#   - name: f5networks.f5_modules
+#   - name: arista.eos
+#   - name: cisco.nxos
+#   - name: netbox.netbox
+#     version: 3.0.0
+#   - name: paloaltonetworks.panos
+#   - name: junipernetworks.junos
