@@ -1,4 +1,4 @@
-# galaxy
+# this was requirements.yml <= Ansible 2.10
 # collections: 
 #   - name: awx.awx
 #   - name: cisco.ios
