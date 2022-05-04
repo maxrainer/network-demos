@@ -16,7 +16,7 @@
       tower_password: "{{ ansible_ssh_pass }}"
       validate_certs: no
       name: "F5 BIGIP DYNAMIC - {{ item }} poolmember state"
-      inventory: "eve-ng lab"
+      inventory: "{{ tower_inventory }}"
       job_type: run
       project: Network Demos
       playbook: "playbooks/f5_bigip_provision.yml"
