@@ -1,0 +1,11 @@
+---
+
+- name: F5 BigIP provisioning
+  hosts: f5
+  roles:
+    - maxrainer.f5_loadbalancer
+  vars_files: 
+    - ../vaults/f5_vault.yml
+  gather_facts: no
+  collections:
+    - f5networks.f5_modules
