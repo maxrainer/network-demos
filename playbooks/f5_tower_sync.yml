@@ -15,6 +15,7 @@
       tower_username: admin
       tower_password: "{{ ansible_ssh_pass }}"
       validate_certs: no
+      execution_environment: "{{ ansible_execution_environment | default(omit) }}"
       name: "F5 BIGIP DYNAMIC - {{ item }} poolmember state"
       inventory: "{{ tower_inventory }}"
       job_type: run
