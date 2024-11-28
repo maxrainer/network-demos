@@ -1,0 +1,19 @@
+---
+- name: Network Backup Differential to Repo
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Backup Network Configuration to Remote/Cloud Storage
+      ansible.builtin.include_role:
+        name: network.backup.backup
+      vars:
+        operation: backup
+        type: diff
+        data_store:
+          scm:
+            origin:
+              url: "{{ GIT_REPO }}"
+              token: "{{ GH_ACCESS_TOKEN }}"
+              user:
+                name: "{{ username }}"
+                email: "{{ email }}"
