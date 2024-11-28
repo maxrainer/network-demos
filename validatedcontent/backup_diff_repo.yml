@@ -12,8 +12,8 @@
         data_store:
           scm:
             origin:
-              url: "{{ GIT_REPO }}"
-              token: "{{ GH_ACCESS_TOKEN }}"
+              url: "{{ repo }}"
+              token: "{{ token }}"
               user:
                 name: "{{ username }}"
                 email: "{{ email }}"
