@@ -1,0 +1,10 @@
+---
+
+- name: F5 BigIP provisioning
+  hosts: f5
+  roles:
+    - maxrainer.f5_loadbalancer
+  connection: local
+  gather_facts: false
+  collections:
+    - f5networks.f5_modules
