@@ -1,0 +1,17 @@
+---
+
+- name: firewall generic playbook
+  gather_facts: false
+  hosts: fg
+
+  tasks: 
+    - name: gather facts from FortiGate
+      fortinet.fortios.fortios_configuration_fact: 
+        access_token: "9bzH156jbs8fpqqxbxHyH0mspgq6jG"
+        selectors:
+          - selector: system_interface
+      register: _fg_facts
+
+    - debug:
+        var: _fg_facts  
+        
